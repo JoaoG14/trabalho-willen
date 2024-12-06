@@ -1,0 +1,270 @@
+/* Switch */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 52px;
+    height: 25px;
+    margin: 20px 0px;
+}
+
+.switch input {
+    display: none;
+}
+
+.btn-access {
+    background-color: #294491;
+    color: white;
+    border-color: #294491;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 17px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #234bbd;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #051131;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+/* Menu */
+
+ul.divider {
+    height: 65px;
+    vertical-align: middle;
+}
+
+.header-menu {
+    background-color: #232323;
+    text-align: center;
+}
+
+.header-menu img {
+    margin: 30px 0;
+}
+
+.dropdown,
+.dropdown .btn {
+    margin-top: 5px;
+    width: 100%!important;
+    background-color: #232323;
+    color: white;
+}
+
+.dropdown-toggle {
+    opacity: 0.85;
+}
+
+.dropdown-item .fa {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.navbar-right i {
+    color: white;
+}
+
+.pull-right .fa-sync-alt {
+    transition: 1s;
+}
+
+
+/* Animações */
+
+.pull-right .fa-sync-alt:hover {
+    -webkit-transform: scale(1.4) rotate(360deg);
+    -moz-transform: scale(1.4) rotate(360deg);
+    -o-transform: scale(1.4) rotate(360deg);
+    transform: scale(1.4) rotate(360deg);
+    color: #234bbd;
+}
+
+.pull-right .fa-expand {
+    transition: 1s;
+}
+
+.pull-right .fa-expand:hover {
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -o-transform: scale(1.4);
+    transform: scale(1.4);
+    color: #294491;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    margin: 10px 0 0px 0;
+    border: none;
+    border-radius: 0px;
+}
+
+
+/* Menu Lateral*/
+
+.sidebar {
+    background-color: #232323;
+}
+
+.logo {
+    background-color: #232323!important;
+}
+
+.siderbar .sidebar-links ul li a {
+    color: white;
+}
+
+.logo img {
+    height: 50px;
+    margin: 0;
+}
+
+.siderbar .sidebar-links ul li a:hover,
+.siderbar .sidebar-links ul li a:active {
+    color: white;
+}
+
+header.page-header .logo img {
+    max-height: 60px;
+}
+
+.mobile.logo {
+    display: none;
+}
+
+
+/* tag do bootstrap*/
+
+.bootstrap-tagsinput .tag {
+    margin-right: 2px;
+    color: white;
+    background-color: #999;
+    border-radius: 10px;
+    padding: 10px 10px 2px 2px;
+}
+
+
+/* Nav Pills*/
+
+.nav-pills .nav-link {
+    border-radius: .25rem .25rem 0 0;
+    margin-right: 2px;
+    border-color: #ddd!important;
+    background-color: #eee!important;
+}
+
+.nav-pills .nav-link {
+    border-color: #ccc!important;
+    background-color: #ddd!important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: rgb(0, 102, 153)!important;
+}
+
+
+/* Tabelas */
+
+.table thead th {
+    font-size: 14px;
+    text-transform: initial!important;
+    line-height: 40px;
+}
+
+.table tbody th {
+    font-size: 14px;
+    text-transform: initial!important;
+    line-height: 40px;
+}
+
+
+/* Fieldset */
+
+fieldset {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 2px 2px 40px 2px;
+    font-size: 14px;
+}
+
+fieldset legend {
+    width: auto;
+    padding-right: 8px;
+}
+
+
+/* Configurações gerais */
+
+.theme.active {
+    color: rgb(0, 102, 153);
+}
+
+input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+    cursor: pointer;
+}
+
+.btn-file div {
+    width: 100px;
+    height: 100px;
+    background: #f1f1f1;
+    line-height: 100px;
+}
+
+@media(max-width: 426px) {
+    .mobile.logo {
+        width: auto;
+        display: inline;
+    }
+}
